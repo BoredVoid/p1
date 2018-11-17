@@ -1,0 +1,29 @@
+package main;
+
+import java.awt.*;
+import javax.swing.*;
+
+public class myFrame extends JFrame {
+
+    private myFrame() {
+        //   super("This Is My First Frame");
+        setSize(200, 200);
+        setVisible(true);
+        setTitle("This Is My First Frame");
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        JPanel panel = new JPanel();
+        panel.setLayout(null);
+
+        JButton button = new JButton("fkc of");
+        panel.add(button);
+        getContentPane().add(panel);
+
+        button.setBounds(10,10,150,20);
+    }
+
+
+    public static void main(String args[]) {
+        new myFrame();
+
+    }
+}
